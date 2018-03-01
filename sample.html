@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+  <style>
+    .tab-container {
+      margin-top: 20px;
+    }
+    .header {
+      display: flex; 
+      width: 200px;
+    }
+    .header .btn {
+      padding: 5px 10px;
+      text-align: center;
+      border-left: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      flex: 1;
+      background-color: #ccc;
+      cursor: pointer;
+    }
+    .header .btn:last-child {
+      border-right: 1px solid #ddd;
+    }
+    .header .btn.active {
+      background-color: #fff;
+    }
+    
+    .content {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+    }
+    .content .panel {
+      display: none;
+    }
+    .content .panel.active {
+      display: block;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="tab-container">
+    <div class="header">
+      <div class="btn active">1</div>
+      <div class="btn">2</div>
+      <div class="btn">3</div>
+      <div class="btn">4</div>
+    </div>
+    <div class="content">
+      <div class="panel active">panel1</div>
+      <div class="panel">panel2</div>
+      <div class="panel">panel3</div>
+      <div class="panel">panel4</div>
+    </div>
+  </div>
+  <div class="tab-container">
+    <div class="header">
+      <div class="btn">1</div>
+      <div class="btn">2</div>
+      <div class="btn active">3</div>
+      <div class="btn">4</div>
+    </div>
+    <div class="content">
+      <div class="panel">panel1</div>
+      <div class="panel">panel2</div>
+      <div class="panel active">panel3</div>
+      <div class="panel">panel4</div>
+    </div>
+  </div>
+  <script src="tab.js"></script>
+</body>
+</html>
