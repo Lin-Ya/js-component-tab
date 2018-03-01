@@ -7,3 +7,5 @@
 
 ## 如何使用
 通过new一个Tab函数，传入参数为需要实现tab切换功能的DOM节点。
+
+[DEMO预览地址](https://lin-ya.github.io/js-component-tab/sample.html)
